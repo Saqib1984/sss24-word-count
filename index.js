@@ -10,7 +10,7 @@ while (condition) {
     let answer = await inquirer.prompt({
         type: "input",
         name: "sentence",
-        message: chalk.yellow.bold("Please enter a sentence you want to count words.")
+        message: chalk.yellow.bold("Please enter a sentence you want to count words."),
     });
     // i will make variable by using the answer of await function and use trim and split method.so that may remove the extra spaces and get seperate words through split method
     let word_count = answer.sentence.trim().split(" ");
